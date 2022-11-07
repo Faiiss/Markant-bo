@@ -1,0 +1,77 @@
+@use 'colors';
+@use 'fonts';
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: colors.$blue;
+    box-shadow: 0 1.4rem 8rem rgb(0 0 0 / 20%);
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: colors.$white;
+}
+.nav__list{
+    list-style-type: none;
+}
+.nav__list .list__item{
+    display: inline-block;
+    padding: 20px 10px;
+}
+.logo {
+    margin-right: 80rem;
+    width: 20rem;
+  }
+
+.menu{
+    display: none;
+}
+.menu-line {
+    width: 53px;
+    height: 9px;
+    background-color: colors.$white;
+    margin-bottom: 10px;
+}
+.list__item:hover{
+    display: inline-block;
+	background-color: colors.$white;
+	text-decoration: none;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.list__item{
+    display: inline-block;
+	text-decoration: none;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+    z-index: 1000;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+.active{
+    display: inline-block;
+	background-color: colors.$white;
+	text-decoration: none;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+    z-index: 1000;
+    border-radius: 1rem;
+    padding: 1rem;
+}

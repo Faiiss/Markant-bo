@@ -1,0 +1,71 @@
+@use 'colors';
+@use 'fonts';
+
+//section1
+.blob__shape{
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -358px;
+    left: -222px
+}
+.blob__shape-1 {
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -190px;
+    left: 1040px;
+    z-index: -1;
+}
+.blob__img {
+    z-index: 1;
+    width: 40%;
+    position: absolute;
+    top: 176px;
+    left: 210px;
+}
+.section__title {
+    position: absolute;
+    top: 176px;
+    left: 1067px;
+    font-size: 7rem;
+    font-family: Futura-bold;
+    color: colors.$zwart;
+}
+
+.section__p {
+    position: absolute;
+    top: 289px;
+    left: 1111px;
+    color: colors.$zwart;
+    font-size: 2.5rem;
+    width: 45ch;
+}
+
+//Section 2
+.section-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards__list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__item{
+    position: relative;
+    width: 35rem;
+    height: 19rem;
+    background: colors.$zwart;
+    border-radius: 2rem;
+    box-shadow: 0 35px 80px colors.$shadowZwart;
+    transition: 0.5s;
+}
+
+.card__item:hover{
+    height: 45rem;
+}

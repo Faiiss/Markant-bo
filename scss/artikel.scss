@@ -1,0 +1,77 @@
+@use 'colors';
+@use 'fonts';
+
+.artikel__main {
+    margin-top: 10rem;
+    border-radius: 4rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: colors.$linear-gradient;
+    width: 90%;
+    height: 71%;
+    justify-content: center;
+    padding: 5rem;
+    top: 12.2rem;
+    left: 10rem;
+    box-shadow: colors.$shadowZwart;
+}
+
+.artikel__titel{
+text-align:right;
+font-size: 5rem;
+font-family: fonts.$bold;
+color: colors.$white;
+text-shadow: colors.$shadowZwart;
+}
+
+.artikel__text-box{
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.artikel__inhoud{
+text-align:right;
+margin-top: 5rem;
+width: 50ch;
+font-size: 4rem;
+font-family: fonts.$light;
+color: colors.$white;
+}
+
+.artikel__img{
+    position: absolute;
+    border-radius: 2rem;
+    top: 8rem;
+    left: -1rem;
+    width: 45rem;
+    height: 55rem;
+    object-fit: cover;
+}
+
+.artikel__button{
+    list-style: none;
+    background: rgb(121, 180, 204);
+    border: 0.4rem solid rgb(121, 180, 204);
+    position: absolute;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 2.5rem;
+    color: #fff;
+    top: 582px;
+    left: 1557px;
+    transition: 0.5s;
+}
+
+.artikel__button:hover{
+    background-color: colors.$blue-t;
+    border: 0.4rem solid colors.$blue;
+}
