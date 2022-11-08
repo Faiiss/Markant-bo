@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8"/>
     <title>Registration</title>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/login.css"/>
+    <script src="./js/hamburgermenu.js" defer></script>
 </head>
 
 <body>
@@ -13,7 +14,9 @@
             <ul class="nav__list" id="navi__list">
                 <li class="list__item"><a href="home.html">Home</a></li>
                 <li class="list__item"><a href="#">Agenda</a></li>
-                <li class="list__item"><a class="active" href="index.php">Nieuws</a></li>
+                <li class="list__item"><a href="index.php">Nieuws</a></li>
+                <li class="list__item"><a href="login.php">login</a></li>
+                <li class="list__item"><a class="active" href="register.php">Register</a></li>
             </ul>
             <div class="menu" id="toggle__button">
                 <div class="menu-line"></div>
@@ -51,14 +54,14 @@
         }
     } else {
 ?>
-<section>
-<form class="form" action="" method="post">
-        <h1 class="login-title">Registration</h1>
-        <input type="text" class="login-input" name="username" placeholder="Username" required />
-        <input type="text" class="login-input" name="email" placeholder="Email Adress">
-        <input type="password" class="login-input" name="password" placeholder="Password">
-        <input type="submit" name="submit" value="Register" class="login-button">
-        <p class="link"><a href="login.php">Click to Login</a></p>
+<section class="login__section">
+<form class="login__form"" action="" method="post">
+        <h1 class="login__title">Registration</h1>
+        <input type="text" class="login__input" name="username" placeholder="Username" required />
+        <input type="text" class="login__input" name="email" placeholder="Email Adress">
+        <input type="password" class="login__input" name="password" placeholder="Password">
+        <input type="submit" name="submit" value="Register" class="login__button">
+        <p class="link"><a class="login__link" href="login.php">Click to Login</a></p>
     </form>
 </section>
 <?php

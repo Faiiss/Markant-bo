@@ -56,7 +56,7 @@
         <input type="text" class="login__input" name="username" placeholder="Username" autofocus="true"/>
         <input type="password" class="login__input" name="password" placeholder="Password"/>
         <input type="submit" value="Login" name="submit" class="login__button"/>
-        <p class="login__link"><a href="register.php">New Registration</a></p>
+        <p ><a class="login__link" href="register.php">Nieuwe registratie </a></p>
   </form>
 </section>
 <?php

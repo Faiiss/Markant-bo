@@ -170,9 +170,21 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.section-2 h1 {
+  font-size: 14rem;
+  color: #2c2c2c;
+  font-family: "Futura-bold";
+  text-transform: uppercase;
+  position: absolute;
+  top: 999px;
 }
 
 .cards__list {
+  gap: 4rem;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -181,9 +193,9 @@ header {
 
 .card__item {
   position: relative;
-  width: 35rem;
+  width: 40rem;
   height: 19rem;
-  background: #2c2c2c;
+  background: linear-gradient(35deg, rgba(234, 152, 163, 0.431372549) 0%, rgba(231, 56, 79, 0.2549019608) 100%);
   border-radius: 2rem;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
@@ -191,6 +203,76 @@ header {
 
 .card__item:hover {
   height: 45rem;
+}
+
+.card__img {
+  position: absolute;
+  left: 50%;
+  top: -5rem;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: 15rem;
+  background: black;
+  border-radius: 2rem;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card__item:hover .card__img {
+  width: 25rem;
+  height: 25rem;
+}
+
+.card__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__item .card__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.card__item .card__content .card__details {
+  padding: 4rem;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(16rem);
+}
+
+.card__item:hover .card__content .card__details {
+  transform: translateY(0rem);
+}
+
+.card__item .card__content .card__details h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 2rem;
+  font-family: "Futura-normal";
+}
+
+.card__item .card__content .card__details span {
+  font-size: 1rem;
+  font-family: "Futura-normal";
+  font-weight: 100;
+  opacity: 0.5;
+}
+
+.card__story {
+  color: #fff;
+  font-size: 1rem;
 }
 
 .login__section {
@@ -247,6 +329,19 @@ input:focus {
   border: 0.4rem solid rgb(121, 180, 204);
 }
 
+.login__link {
+  font-family: "Futura-bold";
+  text-decoration: none;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  transition: 0.5s;
+}
+
+.login__link:hover {
+  color: rgb(121, 180, 204);
+}
+
 @media screen and (max-width: 1068px) {
   .blog-post {
     max-width: 80rem;
@@ -269,7 +364,6 @@ input:focus {
     margin-left: 1rem;
   }
   header {
-    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -306,8 +400,8 @@ input:focus {
   .menu {
     display: block;
     position: absolute;
-    left: 298px;
-    top: 27px;
+    left: 293px;
+    top: 43px;
   }
   .nav__list {
     list-style-type: none;
@@ -324,17 +418,15 @@ input:focus {
     display: block;
   }
   .logo {
-    margin-top: 10px;
-    margin-left: 10px;
     position: absolute;
     width: 20rem;
-    left: 10px;
-    top: 10px;
+    left: 41px;
+    top: 37px;
   }
   .social-ul {
     position: absolute;
     left: 8px;
-    top: 3022px;
+    top: 2906px;
   }
   .social-ul > li > a {
     width: 7rem;
@@ -366,6 +458,44 @@ input:focus {
     position: absolute;
     top: 168px;
     left: -27px;
+  }
+  .artikel__titel {
+    font-size: 2rem;
+    width: 20ch;
+    font-family: "Futura-bold";
+    color: #2c2c2c;
+    text-shadow: rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+  }
+  .artikel__main {
+    margin-top: 5rem;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(35deg, rgba(234, 152, 163, 0.431372549) 0%, rgba(231, 56, 79, 0.2549019608) 100%);
+    width: 196%;
+    height: 20%;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  .artikel__img {
+    align-items: flex-start;
+    border-radius: 2rem;
+    width: 30rem;
+    height: 19rem;
+    object-fit: cover;
+  }
+  .artikel__inhoud {
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: "Futura-normal";
+    color: #2c2c2c;
   }
 }
 
