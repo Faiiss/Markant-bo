@@ -2,8 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/login.css"/>
+    <script src="./js/hamburgermenu.js" defer></script>
 </head>
 <body>
 <header>
@@ -12,7 +14,8 @@
             <ul class="nav__list" id="navi__list">
                 <li class="list__item"><a href="home.html">Home</a></li>
                 <li class="list__item"><a href="#">Agenda</a></li>
-                <li class="list__item"><a class="active" href="index.php">Nieuws</a></li>
+                <li class="list__item"><a href="index.php">Nieuws</a></li>
+                <li class="list__item"><a class="active" href="login.php">login</a></li>
             </ul>
             <div class="menu" id="toggle__button">
                 <div class="menu-line"></div>
@@ -47,13 +50,13 @@
         }
     } else {
 ?>
-<section>
-<form class="form" method="post" name="login">
-        <h1 class="login-title">Login</h1>
-        <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
-        <input type="password" class="login-input" name="password" placeholder="Password"/>
-        <input type="submit" value="Login" name="submit" class="login-button"/>
-        <p class="link"><a href="register.php">New Registration</a></p>
+<section class="login__section">
+<form class="login__form" method="post" name="login">
+        <h1 class="login__title">Login</h1>
+        <input type="text" class="login__input" name="username" placeholder="Username" autofocus="true"/>
+        <input type="password" class="login__input" name="password" placeholder="Password"/>
+        <input type="submit" value="Login" name="submit" class="login__button"/>
+        <p class="login__link"><a href="register.php">New Registration</a></p>
   </form>
 </section>
 <?php

@@ -121,82 +121,128 @@ header {
   padding: 1rem;
 }
 
-.artikel__section {
-  margin-top: 8rem;
+.blob__shape {
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -358px;
+  left: -222px;
+}
+
+.blob__shape-1 {
+  width: 45%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -190px;
+  left: 1040px;
+  z-index: -1;
+}
+
+.blob__img {
+  z-index: 1;
+  width: 40%;
+  position: absolute;
+  top: 176px;
+  left: 210px;
+}
+
+.section__title {
+  position: absolute;
+  top: 176px;
+  left: 1067px;
+  font-size: 7rem;
+  font-family: Futura-bold;
+  color: #2c2c2c;
+}
+
+.section__p {
+  position: absolute;
+  top: 289px;
+  left: 1111px;
+  color: #2c2c2c;
+  font-size: 2.5rem;
+  width: 45ch;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__item {
+  position: relative;
+  width: 35rem;
+  height: 19rem;
+  background: #2c2c2c;
+  border-radius: 2rem;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.card__item:hover {
+  height: 45rem;
+}
+
+.login__section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.artikel__main {
-  margin-top: 5rem;
-  border-radius: 4rem;
+.login__form {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(35deg, rgba(234, 152, 163, 0.431372549) 0%, rgba(231, 56, 79, 0.2549019608) 100%);
-  width: 60%;
-  height: 20%;
   justify-content: center;
-  padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.15);
-  flex-wrap: wrap;
-  align-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.artikel__titel {
-  font-size: 5rem;
-  font-family: "Futura-bold";
-  color: #2c2c2c;
-  text-shadow: rgba(0, 0, 0, 0.15);
-  text-transform: uppercase;
-}
-
-.artikel__text-box {
-  padding: 4rem;
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
-  flex-direction: column;
-}
-
-.artikel__inhoud {
-  text-align: left;
-  margin-top: 2rem;
+.login__title {
   margin-bottom: 2rem;
   font-size: 4rem;
-  font-family: "Futura-normal";
-  color: #2c2c2c;
+  font-family: "Futura-bold";
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
-.artikel__img {
-  align-items: flex-start;
-  border-radius: 2rem;
-  width: 45rem;
-  height: 55rem;
-  object-fit: cover;
-}
-
-.artikel__button {
-  margin-top: 1rem;
-  list-style: none;
-  background: rgb(121, 180, 204);
+.login__input {
+  margin-bottom: 2rem;
+  padding: 0.4rem 4rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
   border: 0.4rem solid rgb(121, 180, 204);
-  padding: 2rem;
-  border-radius: 2rem;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  font-size: 2.5rem;
+}
+
+input:focus {
+  outline: none;
+  transition: 0.5s;
+  background-color: rgba(121, 180, 204, 0.631);
   color: #fff;
-  top: 598px;
-  left: 622px;
+}
+
+.login__button {
+  background: rgb(121, 180, 204);
+  color: #fff;
+  padding: 0.4rem 4rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  border: 0.4rem solid rgb(121, 180, 204);
+  margin-bottom: 1rem;
+  cursor: pointer;
   transition: 0.5s;
 }
 
-.artikel__button:hover {
+.login__button:hover {
   background-color: rgba(121, 180, 204, 0.631);
   border: 0.4rem solid rgb(121, 180, 204);
 }
@@ -223,6 +269,7 @@ header {
     margin-left: 1rem;
   }
   header {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -259,8 +306,8 @@ header {
   .menu {
     display: block;
     position: absolute;
-    left: 293px;
-    top: 43px;
+    left: 298px;
+    top: 27px;
   }
   .nav__list {
     list-style-type: none;
@@ -277,15 +324,17 @@ header {
     display: block;
   }
   .logo {
+    margin-top: 10px;
+    margin-left: 10px;
     position: absolute;
     width: 20rem;
-    left: 41px;
-    top: 37px;
+    left: 10px;
+    top: 10px;
   }
   .social-ul {
     position: absolute;
     left: 8px;
-    top: 2906px;
+    top: 3022px;
   }
   .social-ul > li > a {
     width: 7rem;
@@ -318,44 +367,6 @@ header {
     top: 168px;
     left: -27px;
   }
-  .artikel__titel {
-    font-size: 2rem;
-    width: 20ch;
-    font-family: "Futura-bold";
-    color: #2c2c2c;
-    text-shadow: rgba(0, 0, 0, 0.15);
-    text-transform: uppercase;
-  }
-  .artikel__main {
-    margin-top: 5rem;
-    border-radius: 4rem;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(35deg, rgba(234, 152, 163, 0.431372549) 0%, rgba(231, 56, 79, 0.2549019608) 100%);
-    width: 196%;
-    height: 20%;
-    justify-content: center;
-    padding: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.15);
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: flex-start;
-  }
-  .artikel__img {
-    align-items: flex-start;
-    border-radius: 2rem;
-    width: 30rem;
-    height: 19rem;
-    object-fit: cover;
-  }
-  .artikel__inhoud {
-    text-align: left;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-family: "Futura-normal";
-    color: #2c2c2c;
-  }
 }
 
-/*# sourceMappingURL=artikel.css.map */
+/*# sourceMappingURL=login.css.map */

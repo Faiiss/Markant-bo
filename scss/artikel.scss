@@ -1,63 +1,67 @@
 @use 'colors';
 @use 'fonts';
 
+.artikel__section{
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .artikel__main {
-    margin-top: 10rem;
+    margin-top: 5rem;
     border-radius: 4rem;
-    position: absolute;
     display: flex;
     flex-direction: column;
     background: colors.$linear-gradient;
-    width: 90%;
-    height: 71%;
+    width: 60%;
+    height: 20%;
     justify-content: center;
-    padding: 5rem;
-    top: 12.2rem;
-    left: 10rem;
+    padding: 2rem;
     box-shadow: colors.$shadowZwart;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 
 .artikel__titel{
-text-align:right;
 font-size: 5rem;
 font-family: fonts.$bold;
-color: colors.$white;
+color: colors.$zwart;
 text-shadow: colors.$shadowZwart;
+text-transform: uppercase;
 }
 
 .artikel__text-box{
-    position: absolute;
-    top: 5rem;
-    right: 5rem;
     padding: 4rem;
     display: flex;
+    justify-content: end;
+    align-items: flex-end;
     flex-direction: column;
 }
 
 .artikel__inhoud{
-text-align:right;
-margin-top: 5rem;
-width: 50ch;
+text-align:left;
+margin-top: 2rem;
+margin-bottom: 2rem;
 font-size: 4rem;
-font-family: fonts.$light;
-color: colors.$white;
+font-family: fonts.$default;
+color: colors.$zwart;
 }
 
 .artikel__img{
-    position: absolute;
+    align-items: flex-start;
     border-radius: 2rem;
-    top: 8rem;
-    left: -1rem;
     width: 45rem;
     height: 55rem;
     object-fit: cover;
 }
 
 .artikel__button{
+    margin-top: 1rem;
     list-style: none;
     background: rgb(121, 180, 204);
     border: 0.4rem solid rgb(121, 180, 204);
-    position: absolute;
     padding: 2rem;
     border-radius: 2rem;
     color: inherit;
@@ -66,8 +70,8 @@ color: colors.$white;
     outline: inherit;
     font-size: 2.5rem;
     color: #fff;
-    top: 582px;
-    left: 1557px;
+    top: 598px;
+    left: 622px;
     transition: 0.5s;
 }
 

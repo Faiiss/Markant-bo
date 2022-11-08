@@ -1,0 +1,89 @@
+@use 'fonts-import';
+@use 'fonts';
+@use 'reset';
+@use 'nav';
+@use 'responsive';
+
+
+@use 'colors';
+//section post 
+.post__section{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.post__form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.post__title{
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-family: fonts.$bold;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.post__label{
+    font-family: fonts.$bold;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.post__submit{
+    background: colors.$blue;
+    color: map-get($map: colors.$whites, $key:Fontcolor );
+    padding:  0.4rem 4rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    border: 0.4rem solid colors.$blue;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input:focus{
+    outline: none;
+    transition: 0.5s;
+    background-color: colors.$blue-t;
+    color: map-get($map: colors.$whites, $key:Fontcolor );
+}
+
+.post__input{
+    margin-bottom: 2rem;
+    padding:  0.4rem 4rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    border: 0.4rem solid colors.$blue;
+ }
+
+.post__submit:hover{
+    background-color: colors.$blue-t;
+    border: 0.4rem solid colors.$blue;
+}
+
+textarea{
+    margin-bottom: 2rem;
+    padding:  0.4rem 4rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    border: 0.4rem solid colors.$blue;
+}
+
+textarea:focus{
+    outline: none;
+    transition: 0.5s;
+    background-color: colors.$blue-t;
+    color: map-get($map: colors.$whites, $key:Fontcolor );
+}

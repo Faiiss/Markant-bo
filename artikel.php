@@ -26,7 +26,7 @@ $post = $statement->fetch(PDO::FETCH_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/artikel.css">
-    <script src="js/hamburgermenu.js"></script>
+    <script src="js/hamburgermenu.js" defer></script>
     <title>Artikel</title>
 </head>
 <body>
@@ -37,6 +37,7 @@ $post = $statement->fetch(PDO::FETCH_ASSOC);
                 <li class="list__item"><a href="home.html">Home</a></li>
                 <li class="list__item"><a href="#">Agenda</a></li>
                 <li class="list__item"><a class="active" href="index.php">Nieuws</a></li>
+                <li class="list__item"><a  href="login.php">Login</a></li>
             </ul>
             <div class="menu" id="toggle__button">
                 <div class="menu-line"></div>
@@ -45,15 +46,15 @@ $post = $statement->fetch(PDO::FETCH_ASSOC);
             </div>
         </nav>
     </header>
+    <section class="artikel__section">
+    <h2 class="artikel__titel"><?php echo $post['titel']; ?></h2>
     <article class="artikel__main">
-        <div class="artikel__text-box">
-            <h2 class="artikel__titel"><?php echo $post['titel']; ?></h2>
-            <p class="artikel__inhoud"><?php echo $post['content']; ?></p>
-        </div>
         <img src="<?php echo $post['foto']?>" alt="" class="artikel__img">
+        <p class="artikel__inhoud"><?php echo $post['content']; ?></p>
         <a href="index.php">
             <button class="artikel__button">terug</button>
         </a>
     </article>
+    </section>
 </body>
 </html>

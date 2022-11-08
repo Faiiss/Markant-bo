@@ -19,13 +19,14 @@ $result = $connection->query('SELECT * FROM `post` ORDER BY id DESC');
 </head>
 
 <body>
-<header>
+    <header>
         <nav class="navbar">
             <a href="index.html"><img src="img/markant_logo_1.png" class="logo" alt=""></a>
             <ul class="nav__list" id="navi__list">
-                <li class="list__item"><a href="home.html">Home</a></li>
+                <li class="list__item"><a  href="home.html">Home</a></li>
                 <li class="list__item"><a href="#">Agenda</a></li>
                 <li class="list__item"><a class="active" href="index.php">Nieuws</a></li>
+                <li class="list__item"><a href="login.php">login</a></li>
             </ul>
             <div class="menu" id="toggle__button">
                 <div class="menu-line"></div>
@@ -33,7 +34,7 @@ $result = $connection->query('SELECT * FROM `post` ORDER BY id DESC');
                 <div class="menu-line"></div>
             </div>
         </nav>
-</header>
+    </header>
     <main>
         <div class="container">
             <h2>Artikels</h2>
@@ -64,25 +65,6 @@ $result = $connection->query('SELECT * FROM `post` ORDER BY id DESC');
     </main>
     <footer>
         <h4 class="footertitle">Front end door Faiss</h4>
-
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-        <ul class="social-ul">
-            <li class="social-li">
-                <a href="#">
-                    <i class="fab fa-facebook-f icon"></i> </a>
-            </li>
-            <li>
-                <a href="#"><i class="fab fa-twitter icon"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
-            </li>
-        </ul>
-
     </footer>
 </body>
 

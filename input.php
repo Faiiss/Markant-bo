@@ -61,7 +61,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 
     //stuur bezoeker naar bedankt pagina
-    header('Location: main.php');
+    header('Location: index.php');
     exit;
   }
 
@@ -76,6 +76,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/input.css"/>
+    <script src="./js/hamburgermenu.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -85,7 +87,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             <ul class="nav__list" id="navi__list">
                 <li class="list__item"><a href="home.html">Home</a></li>
                 <li class="list__item"><a href="#">Agenda</a></li>
-                <li class="list__item"><a class="active" href="index.php">Nieuws</a></li>
+                <li class="list__item"><a href="index.php">Nieuws</a></li>
+                <li class="list__item"><a class="active" href="login.php">login</a></li>
             </ul>
             <div class="menu" id="toggle__button">
                 <div class="menu-line"></div>
@@ -94,34 +97,34 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             </div>
         </nav>
 </header>
-<section>
-<h2>posten</h2>
-        <form action="input.php" method="POST" novalidate>
-          <label for="titel">titel</label>
-          <input class="input" type="text" value="<?php echo $titel; ?>" name="titel" id="titel" required>
-          <?php if(!empty($errors['titel'])): ?>
-              <em class="errors"><?php echo $errors['titel'] ?></em>
-          <?php endif;?>
+<section class="post__section">
+  <h2 class="post__title">posten</h2>
+        <form class="post__form"action="input.php" method="POST" novalidate>
+           <label class="post__label title" for="titel">titel</label>
+           <input class="post__input" type="text" value="<?php echo $titel; ?>" name="titel" id="titel" required>
+           <?php if(!empty($errors['titel'])): ?>
+             <em class="errors"><?php echo $errors['titel'] ?></em>
+           <?php endif;?>
 
-          <label for="foto"><br>foto</label>
-          <input class="input" type="text" value="<?php echo $foto; ?>" name="foto" id="foto" required>
-          <?php if(!empty($errors['foto'])): ?>
-              <em class="errors"><?php echo $errors['foto'] ?></em>
-          <?php endif;?>
+           <label class="post__label" for="foto"><br>foto</label>
+           <input class="post__input" type="text" value="<?php echo $foto; ?>" name="foto" id="foto" required>
+           <?php if(!empty($errors['foto'])): ?>
+               <em class="errors"><?php echo $errors['foto'] ?></em>
+           <?php endif;?>
 
-          <label for="content"><br>message</label>
-          <textarea class="input  texter" name="content" id="content" required><?php echo $content; ?></textarea>
-          <?php if(!empty($errors['content'])): ?>
-              <em class="errors"><?php echo $errors['content'] ?></em>
-          <?php endif;?>
-              <label for="short"><br>short message</label>
-          <textarea class="input  texter" name="short" id="short" required><?php echo $short; ?></textarea>
-          <?php if(!empty($errors['short'])): ?>
-              <em class="errors"><?php echo $errors['short'] ?></em>
-          <?php endif;?>
-          <br>
+           <label class="post__label" for="content"><br>message</label>
+           <textarea class="input  texter" name="content" id="content" required><?php echo $content; ?></textarea>
+           <?php if(!empty($errors['content'])): ?>
+               <em class="errors"><?php echo $errors['content'] ?></em>
+           <?php endif;?>
+               <label class="post__label" for="short"><br>short message</label>
+           <textarea class="input  texter" name="short" id="short" required><?php echo $short; ?></textarea>
+           <?php if(!empty($errors['short'])): ?>
+               <em class="errors"><?php echo $errors['short'] ?></em>
+           <?php endif;?>
+           <br>
 
-          <button class="submit" type="submit">Submit</button>
+           <button class="post__submit" type="submit">Submit</button>
         </form>
 </section>
 </body>
