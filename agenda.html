@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="./css/agenda.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="./js/agenda.js" defer></script>
+    <script src="./js/hamburgermenu.js" defer></script>
+    <script src="./js/icons.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+          <a href="index.html"><img src="img/markant_logo_1.png" class="logo" alt=""></a>
+          <ul class="nav__list" id="navi__list">
+              <li class="list__item"><a href="home.html">Home</a></li>
+              <li class="list__item"><a class="header__active "href="agenda.html">Agenda</a></li>
+              <li class="list__item"><a href="index.php">Nieuws</a></li>
+              <li class="list__item"><a href="login.php">login</a></li>
+          </ul>
+          <div class="menu" id="toggle__button">
+              <div class="menu-line"></div>
+              <div class="menu-line"></div>
+              <div class="menu-line"></div>
+          </div>
+      </nav>
+  </header>
+  <section class="agenda__section">
+    <div class="wrapper">
+      <div class="agenda__header">
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </div>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Zo</li>
+          <li>Ma</li>
+          <li>Di</li>
+          <li>Wo</li>
+          <li>Do</li>
+          <li>Vr</li>
+          <li>Za</li>
+        </ul>
+        <ul class="days"></ul>
+      </div>
+    </div>
+  </section>
+
+    <footer>
+      <div class="footer__content">
+          <ul class="footer__list">
+              <li class="footer__item">
+                  <a href="home.html">
+                      <button class="footer__button">Home</button>
+                  </a>
+              </li>
+              <li class="footer__item">
+                  <a href="index.php">
+                      <button class="footer__button">Nieuws</button>
+                  </a>
+              </li>
+              <li class="footer__item">
+                  <a href="agenda.html">
+                      <button class="footer__button">Agenda</button>
+                  </a>
+              </li>
+              <li class="footer__item">
+                  <a href="login.php">
+                      <button class="footer__button">Login</button>
+                  </a>
+              </li>
+          </ul>
+          <ul class="footer__socials">
+              <li class="footer__social">
+                  <a href="https://www.facebook.com/markantmantelzorg/">
+                      <i class="fa-brands fa-facebook footer__icon"></i>
+                  </a>
+              </li>
+              <li class="footer__social">
+                  <a href="https://twitter.com/markant020">
+                      <i class="fa-brands fa-twitter footer__icon"></i>
+                  </a>
+              </li>
+              <li class="footer__social">
+                  <a href="https://www.linkedin.com/company/markant-centrum-voor-mantelzorg">
+                      <i class="fa-brands fa-linkedin footer__icon"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div class="footer__credits">
+          <p class="footer__title">Front-end by @faissdesigns <br> © 2022 Markant, Centrum voor Mantelzorg</p>
+      </div>
+  </footer>
+  </body>
+</html>

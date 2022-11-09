@@ -14,7 +14,7 @@
             <a href="index.html"><img src="img/markant_logo_1.png" class="logo" alt=""></a>
             <ul class="nav__list" id="navi__list">
                 <li class="list__item"><a href="home.html">Home</a></li>
-                <li class="list__item"><a href="#">Agenda</a></li>
+                <li class="list__item"><a href="agenda.html">Agenda</a></li>
                 <li class="list__item"><a href="index.php">Nieuws</a></li>
                 <li class="list__item"><a href="login.php">login</a></li>
                 <li class="list__item"><a class="active" href="register.php">Register</a></li>
@@ -82,7 +82,7 @@
                     </a>
                 </li>
                 <li class="footer__item">
-                    <a href="">
+                    <a href="agenda.html">
                         <button class="footer__button">Agenda</button>
                     </a>
                 </li>
