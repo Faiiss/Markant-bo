@@ -8,7 +8,8 @@
     align-items: center;
     position: absolute;
     top: -358px;
-    left: -222px
+    left: -222px;
+    background-color: colors.$linear-gradient;
 }
 .blob__shape-1 {
     width: 45%;
@@ -50,16 +51,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 4rem;
-    
+    gap: 4rem;    
 }
 .section-2 h1{
-    font-size: 14rem;
+    font-size: 10rem;
     color: colors.$zwart;
     font-family: fonts.$bold;
     text-transform: uppercase;
-    position: absolute;
-    top: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .cards__list{
     gap: 4rem;
@@ -69,6 +71,7 @@
     align-items: center;
 }
 .card__item{
+    margin-top: 2rem;
     position: relative;
     width: 40rem;
     height: 19rem;
@@ -79,7 +82,8 @@
 }
 
 .card__item:hover{
-    height: 45rem;
+    height: 65rem;
+    width: 65rem;
 }
 .card__img{
     position: absolute;
@@ -121,28 +125,34 @@
     text-align: center;
     width: 100%;
     transition: 0.5s;
-    transform: translateY(16rem);
+    transform: translateY(18.5rem);
 
 }
 .card__item:hover .card__content .card__details{
     transform: translateY(0rem);
 }
 .card__item .card__content .card__details h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: map-get($map: colors.$whites, $key:Fontcolor );
     line-height: 2rem;
     font-family: fonts.$default;
 }
 .card__item .card__content .card__details span{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: fonts.$default;
     font-weight: 100;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .card__story{
     color: map-get($map: colors.$whites, $key:Fontcolor );
-    font-size: 1rem;
+    font-size: 1.2rem;
+    height: 20ch;
+}
+
+.card__item:hover .card__story{
+    font-size: 2rem;
+    height: 100%;
 }
 //Section login page
 

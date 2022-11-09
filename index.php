@@ -14,8 +14,9 @@ $result = $connection->query('SELECT * FROM `post` ORDER BY id DESC');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markant </title>
-    <link rel="stylesheet" href="./css/style.css" defer>
-    <script src="js/hamburgermenu.js" defer></script>
+    <script src="./js/hamburgermenu.js" defer></script>
+    <script src="./js/icons.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -64,7 +65,50 @@ $result = $connection->query('SELECT * FROM `post` ORDER BY id DESC');
         </div>
     </main>
     <footer>
-        <h4 class="footertitle">Front end door Faiss</h4>
+        <div class="footer__content">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="home.html">
+                        <button class="footer__button">Home</button>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="index.php">
+                        <button class="footer__button">Nieuws</button>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="">
+                        <button class="footer__button">Agenda</button>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="login.php">
+                        <button class="footer__button">Login</button>
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer__socials">
+                <li class="footer__social">
+                    <a href="https://www.facebook.com/markantmantelzorg/">
+                        <i class="fa-brands fa-facebook footer__icon"></i>
+                    </a>
+                </li>
+                <li class="footer__social">
+                    <a href="https://twitter.com/markant020">
+                        <i class="fa-brands fa-twitter footer__icon"></i>
+                    </a>
+                </li>
+                <li class="footer__social">
+                    <a href="https://www.linkedin.com/company/markant-centrum-voor-mantelzorg">
+                        <i class="fa-brands fa-linkedin footer__icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__credits">
+            <p class="footer__title">Front-end by @faissdesigns <br> © 2022 Markant, Centrum voor Mantelzorg</p>
+        </div>
     </footer>
 </body>
 

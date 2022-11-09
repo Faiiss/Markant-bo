@@ -54,6 +54,22 @@
     }
 }
 @media screen and (max-width: 375px){
+    #cta {
+        background: rgb(121, 180, 204);
+        border: 0.4rem solid rgb(121, 180, 204);
+        position: absolute;
+        padding: 1rem;
+        border-radius: 2rem;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        font-size: 1.5rem;
+        color: #fff;
+        top: 238px;
+        left: 204px;
+        transition: 0.5s;
+    }
     .navbar{
         flex-direction: column;
         flex-direction: column;
@@ -109,20 +125,43 @@
         z-index: 1;
     }
     .blob__shape {
-        width: 120%;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 13px;
-        left: -193px;
+        top: 34px;
+        left: -194px;
     }
     .blob__img {
         z-index: 1;
-        width: 80%;
+        width: 54%;
         position: absolute;
-        top: 168px;
-        left: -27px;
+        top: 182px;
+        left: -16px;
+    }
+    .blob__shape-1 {
+        width: 54%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 97px;
+        left: 169px;
+        z-index: -1;
+        rotate: 361deg;
+    }
+    .section__title {
+        position: absolute;
+        top: 165px;
+        left: 184px;
+        font-size: 1.5rem;
+    }
+    .section__p {
+        position: absolute;
+        top: 187px;
+        left: 176px;
+        font-size: 1rem;
+        width: 30ch;
     }
     .artikel__titel {
         font-size: 2rem;
@@ -161,5 +200,60 @@
         font-size: 2rem;
         font-family: "Futura-normal";
         color: #2c2c2c;
+    }
+    .section-2 h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .cards__list {
+        gap: 10rem;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .card__img {
+        position: absolute;
+        left: 50%;
+        top: -5rem;
+        transform: translateX(-50%);
+        width: 15rem;
+        height: 15rem;
+        overflow: hidden;
+        transition: 0.5s;
+    }   
+    .card__item {
+        margin-top: 2rem;
+        position: relative;
+        width: 32rem;
+        height: 55rem;
+    }
+    .card__item .card__content .card__details {
+        padding: 4rem;
+        text-align: center;
+        width: 100%;
+        transition: 0.5s;
+        transform: translateY(-15.5rem);
+    }
+    section {
+        width: 100%;
+        min-height: 48vh;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer__list {
+        list-style: none;
+        display: flex;
+        gap: 4rem;
+        flex-wrap: wrap;
     }
 }
